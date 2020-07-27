@@ -1,0 +1,26 @@
+<template name="contact">
+    {{#if currentUser}}
+        <form class="js-add-user-contact-info">
+            <div class="form-group">
+<!--                <input type="text" name="message" class="form-control" placeholder="Type your message">-->
+<!--                <textarea name="message" placeholder="Type your message"></textarea>-->
+                <div class="md-form">
+                    <label for="form7">Type your message</label>
+                    <textarea name="message" class="md-textarea form-control" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="text" name="fullName" class="form-control" placeholder="Type your full name">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="phoneNo" class="form-control" placeholder="Type phone number">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+
+    {{else}}
+        <p>Please sign in to view content</p>
+    {{/if}}
+</template>

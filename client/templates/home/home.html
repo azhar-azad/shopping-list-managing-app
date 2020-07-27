@@ -1,0 +1,13 @@
+<template name="home">
+    <div class="inner cover">
+        {{#if currentUser}}
+            <h1 class="cover-heading">Welcome</h1>
+            <p class="lead">Click the below link or use the navigation link.</p>
+            <p class="lead">
+                <a href="/shoppingList" class="btn btn-lg btn-default">Go to list</a>
+            </p>
+        {{else}}
+            <p class="lead">Please sign-in to view your shopping list</p>
+        {{/if}}
+    </div>
+</template>

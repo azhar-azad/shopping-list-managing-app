@@ -1,0 +1,11 @@
+<template name="navbar">
+    <nav>
+        <ul class="nav masthead-nav">
+            <li><a href="/">Home</a></li>
+            {{#if currentUser}}
+            <li><a href="/shoppingList">Shopping List</a></li>
+            <li><a href="/contact">Contact</a></li>
+            {{/if}}
+        </ul>
+    </nav>
+</template>

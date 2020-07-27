@@ -1,0 +1,32 @@
+<body>
+    {{renderPage}}
+</body>
+
+<template name="layout">
+    <div class="site-wrapper">
+
+        {{> loginButtons}}
+
+        <div class="site-wrapper-inner">
+
+            <div class="cover-container">
+
+                <div class="masthead clearfix">
+                    <div class="inner">
+                        <h3 class="masthead-brand">Shopping List App</h3>
+                        {{> navbar}}
+                    </div>
+                </div>
+
+                {{> yield}}
+
+                {{> footer}}
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</template>
